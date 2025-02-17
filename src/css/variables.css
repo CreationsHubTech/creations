@@ -1,0 +1,28 @@
+:root {
+  --font-primary: "Orbitron", serif;
+  --font-secondary: "Montserrat", serif;
+
+  --cp1: #7ED957;
+  --cp2: #A3EC54;
+  --cp3: #071516;
+
+  --c0: #000000;
+  --c1: #1A1A1A;
+  --c2: #333333;
+  --c3: #4D4D4D;
+  --c4: #666666;
+  --c5: #808080;
+  --c6: #999999;
+  --c7: #B3B3B3;
+  --c8: #CCCCCC;
+  --c9: #E6E6E6;
+  --c10: #FFFFFF;
+
+  --shadow-start: rgba(52, 211, 3, 0.25);
+  --shadow-end: rgba(52, 211, 3, 0.5);
+
+  --mb1: 1rem;
+  --mb2: 2rem;
+  --mb3: 3rem;
+  --mb4: 4rem;
+}

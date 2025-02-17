@@ -1,0 +1,144 @@
+#portfolio {
+  background:
+    linear-gradient(45deg, #fff 50%, transparent),
+    repeating-conic-gradient(from 45deg at 85% 15%,
+      var(--c9) 0 10deg,
+      var(--c8) 10deg 20deg,
+      var(--c7) 20deg 30deg,
+      var(--c9) 30deg 40deg,
+      var(--c8) 40deg 50deg);
+  min-height: 100dvh;
+  padding: 4rem 0;
+}
+
+.portfolio-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.portfolio-title h1 {
+  display: inline-block;
+}
+
+.portfolio-title h1 span.bg-black {
+  display: block;
+  background-color: #333;
+  color: var(--cp1);
+  padding: .5rem;
+}
+
+.portfolio-title .logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.works .works-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+.works-list .work {
+  position: relative;
+}
+
+.works-list .smartphone {
+  position: absolute;
+  top: 50%;
+  right: 5%;
+}
+
+.works-list .smartphone>svg {
+  position: relative;
+  max-width: 100%;
+  width: 120px;
+  height: auto;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, .15), 4px 8px 16px rgba(0, 0, 0, .15);
+  border-radius: 10px;
+  z-index: 3;
+}
+
+.work-img-desktop {
+  position: relative;
+}
+
+.work-img-dec {
+  position: absolute;
+  width: 90%;
+  height: 110%;
+  background-color: var(--cp1);
+  rotate: -2deg;
+  top: -5%;
+  left: 5%;
+  z-index: 1;
+  border: 1px solid #333;
+}
+
+.work-img-desktop img {
+  position: relative;
+  border: 1px solid #333;
+  height: auto;
+  z-index: 2;
+  display: block;
+}
+
+.work-img-desktop,
+.work-img-desktop img {
+  max-width: 100%;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, .15), 4px 8px 16px rgba(0, 0, 0, .15);
+}
+
+@media (max-width: 1024px) {
+  .portfolio-title {
+    flex-direction: column-reverse;
+    flex-wrap: nowrap;
+  }
+
+  .portfolio-title h1 {
+    display: block;
+  }
+
+  .portfolio-title h1 span.bg-black {
+    display: inline;
+    width: max-content;
+  }
+
+  .portfolio-title .logo-container {
+    max-width: 100%;
+    margin-bottom: 4rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .portfolio-title h1 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+
+  .portfolio-title .logo-container {
+    margin-bottom: 2rem;
+  }
+
+  .works .works-list {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+  }
+
+  .smartphone>svg {
+    width: 100px !important;
+  }
+}
+
+@media (max-width: 450px) {
+  .portfolio-title h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .works .works-list {
+    gap: 6rem;
+  }
+}

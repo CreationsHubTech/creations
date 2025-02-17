@@ -1,0 +1,91 @@
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.dec-green {
+  color: var(--cp1);
+}
+
+/* fonts */
+
+.xxl {
+  font: 700 4rem/1.2 var(--font-primary);
+}
+
+.xl {
+  font: 400 2rem/1.2 var(--font-secondary);
+}
+
+.rm {
+  font: 500 1.2rem/1.5 var(--font-secondary);
+}
+
+.reg {
+  font: 400 1rem/1.5 var(--font-secondary);
+}
+
+/* font colors */
+
+.c0 {
+  color: var(--c0);
+}
+
+.c1 {
+  color: var(--c1);
+}
+
+.c2 {
+  color: var(--c2);
+}
+
+.c3 {
+  color: var(--c3);
+}
+
+.c4 {
+  color: var(--c4);
+}
+
+.c5 {
+  color: var(--c5);
+}
+
+.c6 {
+  color: var(--c6);
+}
+
+.c7 {
+  color: var(--c7);
+}
+
+.c8 {
+  color: var(--c8);
+}
+
+.c9 {
+  color: var(--c9);
+}
+
+.c10 {
+  color: var(--c10);
+}
+
+/* spacings */
+
+.mb1 {
+  margin-bottom: var(--mb1);
+}
+
+.mb2 {
+  margin-bottom: var(--mb2);
+}
+
+.mb3 {
+  margin-bottom: var(--mb3);
+}
+
+.mb4 {
+  margin-bottom: var(--mb4);
+}

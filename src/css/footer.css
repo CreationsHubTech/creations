@@ -1,0 +1,19 @@
+.footer-bg {
+  background-color: var(--cp1);
+}
+
+.footer {
+  padding: 1rem;
+}
+
+.footer>p {
+  font-size: 1.2rem;
+  font-family: var(--font-secondary);
+  text-align: center;
+}
+
+@media (max-width: 540px) {
+  .footer>p {
+    font-size: 1rem;
+  }
+}

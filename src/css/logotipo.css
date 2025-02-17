@@ -1,0 +1,60 @@
+#logotipo #creations,
+#logotipo #hub {
+  animation: showDown 1s ease;
+}
+
+#solucoes-tec #text {
+  animation: showUp 1s ease;
+}
+
+#trace-left {
+  animation: growLeft 1s ease;
+}
+
+#trace-right {
+  animation: growRight 1s ease;
+}
+
+@keyframes showUp {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes showDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes growLeft {
+  0% {
+    transform: translateX(-100px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes growRight {
+  0% {
+    transform: translateX(100px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}

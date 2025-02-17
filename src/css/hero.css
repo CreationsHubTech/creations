@@ -1,0 +1,251 @@
+#hero {
+  background:
+    url('/src/imgs/rays.svg') center/cover no-repeat,
+    url('/src/imgs/bg-hero.jpg') center/cover no-repeat;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.brand-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.intro {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+#form-service>.controls {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+#form-service .form-control label {
+  display: block;
+  margin-bottom: .5rem;
+  font-family: var(--font-secondary);
+  font-size: 1.2rem;
+}
+
+#form-service .form-control label .dec-green {
+  animation: blink infinite 1s ease-in-out;
+}
+
+#form-service .form-control input {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.2rem;
+  color: var(--c2);
+  background-color: var(--cp1);
+  border-radius: 4px;
+  border: none;
+  transition: outline .2s ease, box-shadow .2s ease;
+}
+
+#form-service .form-control input:focus {
+  outline: 2px solid var(--cp2);
+  box-shadow: 0px 0px 8px rgba(52, 211, 3, 1);
+}
+
+#form-service .form-control input::placeholder {
+  color: var(--c5);
+}
+
+#btn-send-service {
+  display: block;
+  padding: 1rem 3rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: var(--c2);
+  font-family: var(--font-secondary);
+  text-transform: uppercase;
+  background-color: var(--cp1);
+  border: none;
+  border-radius: 8px;
+  margin: 0 auto;
+  cursor: pointer;
+  box-shadow: 1px 2px 4px var(--shadow-start), 2px 4px 8px var(--shadow-start);
+  transition: box-shadow .3s ease;
+}
+
+#btn-send-service:hover {
+  background-color: var(--cp2);
+  box-shadow: 1px 2px 8px var(--shadow-end), 2px 4px 16px var(--shadow-end);
+}
+
+#btn-send-service:focus {
+  outline: 2px solid var(--cp2);
+}
+
+.arrows {
+  max-width: fit-content;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.arrows svg {
+  animation: downSlowly 1s ease;
+}
+
+.arrows #middle {
+  animation: downSlowlyMid 1.5s ease;
+}
+
+.arrows #bottom {
+  animation: downSlowlyBot 2s ease;
+}
+
+.arrows>a[href="#portfolio"] {
+  font-size: 3rem;
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-secondary);
+  color: var(--c10);
+  animation: downSlowly 1.5s ease;
+}
+
+.arrows>a[href="#portfolio"]::after {
+  content: 'Portifólios';
+  color: #ffffff50;
+  animation: downSlowly 2s ease;
+}
+
+@media (max-width: 1024px) {
+  .header-bg {
+    margin-top: 2%;
+  }
+
+  .intro {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .arrows {
+    margin-bottom: 2%;
+  }
+}
+
+@media (max-width: 540px) {
+  .intro {
+    gap: 2rem;
+  }
+
+  .intro h1 {
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  .intro h4 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .intro h5 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .intro .url-icon {
+    display: block;
+    margin: 0 auto;
+  }
+
+  #form-service .controls {
+    grid-template-columns: 1fr;
+  }
+
+  #form-service .controls>.form-control label {
+    font-size: 1rem;
+  }
+
+  #form-service .controls>.form-control input {
+    font-size: 1rem;
+    padding: .5rem;
+  }
+
+  #btn-send-service {
+    font-size: 1rem;
+    padding: .75rem 2.5rem;
+  }
+
+  .mb4 {
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .intro {
+    gap: 1rem;
+  }
+
+  .intro h1 {
+    font-size: 2rem;
+  }
+
+  .intro h4 {
+    font-size: 1.2rem;
+  }
+
+  .intro h5 {
+    font-size: 1.2rem;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 100%;
+  }
+
+  50% {
+    opacity: 50%;
+  }
+
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes downSlowly {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes downSlowlyMid {
+  0% {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes downSlowlyBot {
+  0% {
+    opacity: 0;
+    transform: translateY(-80px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

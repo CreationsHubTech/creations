@@ -1,0 +1,41 @@
+<svg width="114" height="96" viewBox="0 0 114 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="logomarca">
+<g id="c">
+<path d="M113.569 72C108.286 81.1508 100.131 88.3026 90.3689 92.3462C80.6068 96.3898 69.7832 97.0993 59.5768 94.3645C55.1344 93.1741 50.9171 91.3603 47.04 89H52.0001V82H64.0001V75.7473C64.1748 75.7976 64.3501 75.8464 64.526 75.8935C70.6663 77.5388 77.178 77.112 83.051 74.6793C88.924 72.2466 88.5001 72 88.5001 72H113.569Z" fill="#A3EC54"/>
+<path d="M59.5767 1.63558C56.4857 2.46382 53.5036 3.59395 50.6693 5H60.0001V21.7338C61.4535 21.0698 62.9667 20.5243 64.526 20.1065C70.6663 18.4612 77.178 18.888 83.051 21.3207C88.924 23.7534 89.0001 24 89.0001 24L113.569 24C108.286 14.8492 100.131 7.6974 90.3689 3.6538C80.6067 -0.389804 69.7831 -1.09922 59.5767 1.63558Z" fill="#A3EC54"/>
+</g>
+<g id="squares">
+<g id="bottom">
+<rect id="square-14" x="4" y="48" width="8" height="8" fill="#A3EC54"/>
+<rect id="square-15" x="20" y="47" width="9" height="10" fill="#A3EC54"/>
+<rect id="square-16" x="32" y="50" width="15" height="15" fill="#A3EC54"/>
+<rect id="square-17" y="61" width="2" height="2" fill="#7ED957"/>
+<rect id="square-18" x="8" y="63" width="4" height="4" fill="#7ED957"/>
+<rect id="square-19" x="13" y="57" width="6" height="6" fill="#7ED957"/>
+<rect id="square-20" x="25" y="66" width="6" height="6" fill="#7ED957"/>
+<rect id="square-21" x="46" y="66" width="6" height="6" fill="#7ED957"/>
+<rect id="square-22" x="51" y="60" width="4" height="4" fill="#7ED957"/>
+<rect id="square-23" x="20" y="73" width="4" height="4" fill="#7ED957"/>
+<rect id="square-24" x="35" y="73" width="10" height="10" fill="#A3EC54"/>
+<rect id="square-25" x="54" y="74" width="4" height="4" fill="#7ED957"/>
+<rect id="square-26" x="24" y="79" width="3" height="3" fill="#7ED957"/>
+<path id="square-27" d="M19 83H22V86H19V83Z" fill="#7ED957"/>
+</g>
+<g id="top">
+<rect id="square-1" x="32" y="3" width="5" height="5" fill="#7ED957"/>
+<rect id="square-2" x="13" y="8" width="5" height="5" fill="#7ED957"/>
+<rect id="square-3" x="31" y="11" width="5" height="5" fill="#7ED957"/>
+<rect id="square-4" x="39" y="10" width="15" height="15" fill="#A3EC54"/>
+<rect id="square-5" x="19" y="17" width="6" height="6" fill="#A3EC54"/>
+<rect id="square-6" x="1" y="20" width="3" height="3" fill="#7ED957"/>
+<rect id="square-7" x="7" y="25" width="7" height="7" fill="#A3EC54"/>
+<rect id="square-8" x="3" y="33" width="4" height="4" fill="#7ED957"/>
+<rect id="square-9" x="16" y="33" width="3" height="3" fill="#7ED957"/>
+<rect id="square-10" x="27" y="25" width="11" height="11" fill="#A3EC54"/>
+<rect id="square-11" x="20" y="36" width="7" height="7" fill="#A3EC54"/>
+<rect id="square-12" x="30" y="41" width="6" height="6" fill="#7ED957"/>
+<rect id="square-13" x="38" y="36" width="8" height="8" fill="#7ED957"/>
+</g>
+</g>
+</g>
+</svg>
