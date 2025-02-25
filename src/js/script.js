@@ -61,7 +61,7 @@ function renderModalEmailMessage(elParent, message) {
 
 async function sendFormService(formData) {
   try {
-    const response = await fetch('formService.php', {
+    const response = await fetch('./formService.php', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(Object.fromEntries(formData.entries())),
@@ -77,7 +77,7 @@ async function sendFormService(formData) {
       );
     }
   } catch (error) {
-    renderModalEmailMessage(elRoot, '❌ Ocorreu um erro, tente mais tarde. Obrigado!');
+    renderModalEmailMessage(elRoot, '❌ Ocorreu um erro, tente novamente mais tarde. Obrigado!');
   }
 }
 
