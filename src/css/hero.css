@@ -57,6 +57,17 @@
   color: var(--c5);
 }
 
+#form-service .form-control p.invalid {
+  color: #ec0942;
+  font-family: var(--font-secondary);
+  font-size: .75rem;
+  margin-top: .5rem;
+}
+
+#form-service .form-control p.invalid::before {
+  content: '❌ ';
+}
+
 #btn-send-service {
   display: block;
   padding: 1rem 3rem;
@@ -130,7 +141,7 @@
   }
 
   .arrows {
-    margin-bottom: 2%;
+    margin-bottom: 4rem;
   }
 }
 
