@@ -17,6 +17,7 @@
   border: 1px solid var(--cp2);
   box-shadow: 2px 4px 8px rgba(0, 0, 0, .15), 0 0 200px 10px #7ed95750;
   padding: 1rem;
+  margin: 1rem;
   transition: all 1s ease;
   animation: modalShow 1s ease;
 }
