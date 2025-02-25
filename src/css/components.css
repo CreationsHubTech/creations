@@ -8,6 +8,10 @@
   color: var(--cp1);
 }
 
+.no-scroll {
+  overflow-y: hidden;
+}
+
 /* fonts */
 
 .xxl {
