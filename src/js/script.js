@@ -59,6 +59,11 @@ function renderModalEmailMessage(elParent, message) {
   }, 3000);
 }
 
+function updateSubmitterFormService(text) {
+  const buttonSubmitter = document.getElementById('btn-send-service');
+  buttonSubmitter.value = text;
+}
+
 async function sendFormService(formData) {
   try {
     const response = await fetch('./formService.php', {
@@ -70,14 +75,17 @@ async function sendFormService(formData) {
 
     if (response.ok && responseJSON.success) {
       renderModalEmailMessage(elRoot, 'Entraremos em contato assim que possível! 😉');
+      updateSubmitterFormService('Enviado! ✨');
     } else {
       renderModalEmailMessage(
         elRoot,
         'Ocorreu um erro ao enviar o email. Tente novamente mais tarde! 😥'
       );
+      updateSubmitterFormService('Não enviado! ❌');
     }
   } catch (error) {
     renderModalEmailMessage(elRoot, '❌ Ocorreu um erro, tente novamente mais tarde. Obrigado!');
+    updateSubmitterFormService('Não enviado! ❌');
   }
 }
 
@@ -118,6 +126,7 @@ if (formActive) {
         invalidFields.clear();
       } else {
         sendFormService(formData);
+        updateSubmitterFormService('Enviando... 🚀');
       }
     });
   }
