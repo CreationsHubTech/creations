@@ -1,3 +1,5 @@
+let formActive = true;
+
 const formService = document.getElementById('form-service');
 const formPhoneInput = formService.phone;
 const elRoot = document.getElementById('root');
@@ -79,46 +81,58 @@ async function sendFormService(formData) {
   }
 }
 
-if (formService) {
-  formService.addEventListener('submit', async (event) => {
-    event.preventDefault();
+if (formActive) {
+  if (formService) {
+    formService.addEventListener('submit', async (event) => {
+      event.preventDefault();
 
-    const formData = new FormData(formService);
+      const formData = new FormData(formService);
 
-    for (let [key, value] of formData.entries()) {
-      const inputSanitized = sanatizeInput(value);
+      for (let [key, value] of formData.entries()) {
+        const inputSanitized = sanatizeInput(value);
 
-      if (!inputSanitized) {
-        invalidFields.add(key);
-      }
-    }
-
-    if (invalidFields.size > 0) {
-      invalidFields.forEach((field) => {
-        const input = document.getElementById(field);
-        const errorMessageElement = input.nextElementSibling;
-        const newP = document.createElement('p');
-
-        if (!errorMessageElement) {
-          newP.classList.add('invalid');
-          newP.innerText = fieldsPTBR[field];
-          input.insertAdjacentElement('afterend', newP);
-
-          input.addEventListener('input', () => {
-            if (input.nextElementSibling) {
-              input.nextElementSibling.remove();
-            }
-          });
+        if (!inputSanitized) {
+          invalidFields.add(key);
         }
-      });
+      }
 
-      invalidFields.clear();
-    } else {
-      sendFormService(formData);
-    }
+      if (invalidFields.size > 0) {
+        invalidFields.forEach((field) => {
+          const input = document.getElementById(field);
+          const errorMessageElement = input.nextElementSibling;
+          const newP = document.createElement('p');
+
+          if (!errorMessageElement) {
+            newP.classList.add('invalid');
+            newP.innerText = fieldsPTBR[field];
+            input.insertAdjacentElement('afterend', newP);
+
+            input.addEventListener('input', () => {
+              if (input.nextElementSibling) {
+                input.nextElementSibling.remove();
+              }
+            });
+          }
+        });
+
+        invalidFields.clear();
+      } else {
+        sendFormService(formData);
+      }
+    });
+  }
+
+  formPhoneInput?.addEventListener('input', (event) => {
+    event.target.value = event.target.value.replace(/\D+/, '');
   });
+} else {
+  if (formService) {
+    formService.addEventListener('submit', (event) => {
+      event.preventDefault();
+      renderModalEmailMessage(
+        elRoot,
+        'Infelizmente o formulário está desativado temporariamente, tente novamente mais tarde! 😉'
+      );
+    });
+  }
 }
-
-formPhoneInput?.addEventListener('input', (event) => {
-  event.target.value = event.target.value.replace(/\D+/, '');
-});
